@@ -77,6 +77,8 @@ a{
     margin-left: 4vw;
     font-family: "Poppins", sans-serif;
     font-style: italic; 
+    font-size: x-large;
+    
 }
 .li:hover{
     transform: scale(1.19);
