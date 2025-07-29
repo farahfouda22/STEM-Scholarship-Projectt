@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مشاريع الطلاب</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="student-body">
+    <main class="projects-section">
+        <h1>مشاريع الطلاب – STEM Students’ Projects</h1>
+        <p>هنا بنعرض نماذج من مشاريع طلاب STEM اللي بيستعدوا لمنحة جامعة زويل. تقدر تلهم أو تتعلم منهم.</p>
+
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="../stem-study-planner/image/photo.jpg" alt="stem-study-planner/stem.html" class="photo">
+                <h3>Study Schedule App</h3>
+                <p>A clean and organized study schedule that helps STEM students plan their week efficiently</p>
+                <a href="../stem-study-planner/stem.html" class="btn">View Project</a>
+
+            </div>
+        </div>
+       
+    </main>
+</body>
+<script>
+    const cards = document.querySelectorAll('.project-card');
+
+    window.addEventListener('scroll', function () {
+        cards.forEach(card => {
+            const rect = card.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 50) {
+                card.classList.add('show');
+            }
+        });
+    });
+</script>
+
+</html>

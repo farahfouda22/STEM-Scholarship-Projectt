@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="شق" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>تواصل معنا</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body class="contact-body">
+        <main class="contact-section">
+            <h1>تواصل معنا - Contact Us</h1>
+            <p>لو عندك اي سؤال او حابب تتواصل معنا ، ابعتلنا من خلال النموذج ده</p>
+
+            <form class="contact-form" action="javascript:void(0)" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="enter your name" required>
+                <br><br>
+            
+            
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="enter your email" required>
+                <br><br>
+            
+            
+                <label for="message">Message:</label>
+                <textarea type="message" name="message" id="message" rows="5" placeholder="enter a message " required></textarea>
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+
+        
+    </body>
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function (e) {
+            e.preventDefault(); // يمنع الفورم من إنه يتبعت فعليًا
+            alert('✅ تم إرسال الرسالة بنجاح!'); // رسالة تأكيد
+            // ممكن هنا تمسحي البيانات كمان:
+            this.reset();
+        });
+    </script>
+    <script>
+        const cards = document.querySelectorAll('.project-card');
+
+        window.addEventListener('scroll', function () {
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 50) {
+                    card.classList.add('show');
+                }
+            });
+        });
+    </script>
+      
+</html>

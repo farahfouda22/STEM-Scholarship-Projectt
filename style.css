@@ -1,0 +1,222 @@
+
+.home{
+    background-image:
+    url(image/photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.about2{
+    background-color: rgba(244, 232, 217, 0.72);
+    border: 1px solid #ddd;
+}
+p{
+    font-size:x-large;
+    background-color: rgb(243, 221, 191);
+    border:3px solid;
+    border-radius: 40px;
+    text-align: center;
+    padding: 10px 0;
+}
+.details{
+    background-color: rgb(243, 221, 191);
+    border-radius: 30px; 
+}
+.about{
+    background-color: rgb(243, 221, 191);
+    border-radius: 30px; 
+}
+.spea{
+    background-color: rgb(243, 221, 191);
+    border-radius: 30px; 
+}
+.what{
+    background-color: rgb(243, 221, 191);
+    border-radius: 30px; 
+}
+.sp{
+    font-size: larger;
+}
+.ul2{
+    font-size: larger;
+}
+a{
+    color: rgb(11, 1, 51);
+    text-decoration: none;
+}
+.container:hover{
+    background-image: linear-gradient( #ffffff69 , transparent);
+}
+.logo{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    text-transform: uppercase;
+    font-size: clamp(18px, 4vw ,32px);
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    flex-wrap: wrap;
+}
+.ol{
+    position: absolute;
+    top: 40px;
+    right: 1vw;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.li{
+    margin-left: 4vw;
+    font-family: "Poppins", sans-serif;
+    font-style: italic; 
+}
+.li:hover{
+    transform: scale(1.19);
+}
+.location{
+    position: absolute;
+    right: 2vw;
+    bottom: 15vh;
+    text-align: right;
+    font-size: larger;
+    background-color: rgb(38, 29, 211);
+    color: aliceblue;
+    height: 35px;
+    border-radius: 10px;
+}
+.location2{
+    position: absolute;
+    right: 2vw;
+    bottom: 10vh;
+    text-align: right;
+    font-size: larger;
+    background-color: rgb(38, 29, 211);
+    color: aliceblue;
+    height: 35px;
+    border-radius: 10px;
+}
+.project-card img {
+    width: 100%;
+    max-width: 300px; /* العرض الأقصى للصورة */
+    height: 100px;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+.project-card img {
+    transform: scale(1.03);
+}
+.btn{
+    font-size: larger;
+    background-color:black;
+    width: 130px;
+    height: 30px;
+    color: azure;
+    display: block;
+    border-radius: 10px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.btn:hover{
+    background-color: #1b5e20;
+    transform: scale(1.05);
+}
+.contact-body{
+    background-color: rgba(244, 232, 217, 0.72) ;
+}
+.contact-section {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #ececec;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+.contact-section h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.contact-form button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #1b5e20;
+   transform: scale(1.08);
+}
+.student-body{
+    background-color:  rgba(244, 232, 217, 0.72);
+}
+p{
+    font-family: sans-serif;
+}
+h3{
+    font-family:Arial, Helvetica, sans-serif
+}
+h1{
+    font-family:Arial, Helvetica, sans-serif
+}
+@media (max-width: 768px) {
+    .logo {
+      font-size: 24px;
+      top: 20px;
+      left: 20px;
+    }
+  
+    ul {
+      top: 70px;
+      right: 20px;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    li {
+      margin-left: 0;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+  
+    .location {
+        bottom: 370px;
+        right: 20px;
+        font-size: 14px;
+      }
+
+    .location2{
+        bottom: 330px;
+        right: 20px;
+        font-size: 14px;
+    }
+}
+
+
+

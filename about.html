@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>عن المنحة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="about2">
+    <div class="text-box">
+        <p>هنا هنكتب كل المعلومات المهمة عن المنحة، الشروط، المميزات، وطريقة التقديم.</p>
+        <h2 class="details">تفاصيل المنحة</h2>
+        <br><br><br>
+        <h3 >منحة جامعة زويل هي إحدى المبادرات التعليمية الرائدة التي تهدف إلى دعم وتمكين طلاب مدارس المتفوقين في العلوم والتكنولوجيا
+        (STEM) داخل مصر. تسعى هذه المنحة إلى توفير بيئة تعليمية فريدة تدمج بين الدراسة الأكاديمية والبحث العلمي، في واحدة من
+        أكثر المؤسسات ابتكارًا في الشرق الأوسط</h3>
+        <h2 class="about">اهداف المنحه</h2>
+        <br><br>
+        <ul class="ul2">
+            <li class="li2"><a href="$">أن يكون الطالب من خريجي مدارس STEM</a></li>
+            <li class="li2"><a href="$">تحقيق أداء أكاديمي متميز خلال المرحلة الثانوية</a></li>
+            <li class="li2"><a href="$">اجتياز اختبارات القبول الخاصة بجامعة زويل</a></li>
+            <li class="li2"><a href="$">إثبات الجدية والشغف بالعلوم والتكنولوجيا</a></li>
+        </ul>
+        
+        <h2 class="spea">مميزات المنحه</h2>
+        <br><br>
+        <ul class="sp">
+            <li class="spa"><a href="@">غطية كاملة لمصاريف الدراسة</a></li>
+            <li class="spa"><a href="@">التدريب العملي داخل المعامل والمراكز البحثية بالجامع</a></li>
+            <li class="spa"><a href="@">لإشراف الأكاديمي من نخبة من علماء مصر في الخارج والداخل</a></li>
+            <li class="spa"><a href="@">بيئة جامعية تدعم الابتكار والمشاركة في المسابقات البحثية الدولية</a></li>
+        </ul>
+        <h2 class="what">لماذا تختار جامعة زويل؟</h2>
+        <br><br>
+        <h3 class="who">جامعة زويل ليست فقط مؤسسة تعليمية، بل هي منظومة علمية متكاملة تهدف إلى بناء قادة المستقبل في العلوم والهندسة. الالتحاق
+        بهذه الجامعة لا يفتح لك بابًا للتعلم فقط، بل يُمكِّنك من أن تكون جزءًا من مشروع وطني يساهم في نهضة مصر العلمية</h3>
+    </div>
+
+</body>
+<script>
+    const cards = document.querySelectorAll('.project-card');
+
+    window.addEventListener('scroll', function () {
+        cards.forEach(card => {
+            const rect = card.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 50) {
+                card.classList.add('show');
+            }
+        });
+    });
+</script>
+
+</html>
